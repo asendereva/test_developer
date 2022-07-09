@@ -1,0 +1,108 @@
+.about_services {
+  background-color: #DAECFF;
+  padding: 120px 0;
+}
+
+.about_services .container {
+  flex-direction: column;
+}
+
+.about_services .container h2 {
+  margin: 0 auto;
+}
+
+.about_services .container .accordion {
+  margin-top: 100px;
+}
+
+.accordion__item {
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.accordion__item.accordion__item_show .accordion__header .cyrcle {
+  background: #67AEFC;
+}
+
+.accordion__item .accordion__header p {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 125%;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 44px;
+  color: #111;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+.accordion__header::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-image: url("../images/Vector.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  content: "";
+}
+
+.accordion__item .accordion__header .cyrcle {
+  margin-right: 28px;
+  width: 24px;
+  height: 24px;
+  background: #75E169;
+  border-radius: 50%;
+}
+
+.accordion__item_show .accordion__header::after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item_hidden .accordion__header {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.accordion__body {
+  padding: 15px 44px 47px 56px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+}
+
+.accordion__body .accordion-desc {
+  margin-left: 28px;
+}
+
+.accordion__body .accordion-desc p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 175%;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__header {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+  display: none;
+}
+
+.accordion__item.accordion__item_show .accordion__header {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.accordion__item.accordion__item_show .accordion__body {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}

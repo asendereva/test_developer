@@ -1,0 +1,121 @@
+@import 'header';
+@import 'geometri';
+@import 'about-services';
+@import 'develop-stages';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: black;
+
+    @media screen and (max-width: 768px) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+      }
+}
+
+header{
+    position: relative;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+          width: 750px; 
+        }
+    
+    @media screen and (min-width: 992px) {
+          width: 970px;
+        }
+    
+    @media screen and (min-width: 1240px) {
+          width: 1170px; 
+        }
+    
+}
+  
+
+h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    color: #484848;
+
+    @media screen and (max-width: 768px) {
+        font-weight: 800;
+        font-size: 27px;
+        line-height: 120%;
+      }
+    
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 125%;
+    color: #111;
+
+    @media screen and (max-width: 768px) {
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 150%;
+      }   
+
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 125%;
+    color: black;
+
+    @media screen and (max-width: 768px) {
+        font-weight: 800;
+        font-size: 17px;
+        line-height: 27px;
+      }
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-green{
+    background: #75E169;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    padding: 23px 92px;
+
+    &:hover{
+            border: 1px solid #67AEFC;
+            padding: 22px 91px
+          };
+    &:active{
+        background: #67AEFC;
+        color:

@@ -1,0 +1,54 @@
+.ellips-blue{
+  float: right;
+  z-index: -2;
+  background: #DAECFF;
+  width: 31.7vw;
+  height: 89.9vh;
+  border-radius: 100% 0 0 100%/ 50% 0 0 50%;
+  animation: shake 2s linear;
+
+  
+
+  @media screen and (max-width: 768px){
+    height: 60vh;
+  };
+
+  @media screen and (max-width: 425px){
+    height: 48.5vh;
+    width: 49.2vh;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(-80px);    
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+}
+
+.ellips-white{
+  width: 149px;
+  height: 183px;
+  background: #FFFFFF;
+  border-top: 2px solid #67AEFC;
+  border-bottom: 2px solid #67AEFC;
+  border-right: 2px solid #67AEFC;
+  border-radius: 0 100% 100% 0/ 0 50% 50% 0;
+  position: relative;
+  animation: shake 2s ease;
+
+  
+  @media screen and (max-width: 425px){
+    width: 12.54vw;
+    height: 11.84vh;
+    border-top: 2px solid #75E169;
+    border-bottom: 2px solid #75E169;
+    border-right: 2px solid #75E169;
+
+  }
+
+
+}
+
