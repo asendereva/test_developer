@@ -34,3 +34,5 @@ class ItcAccordion {
 
 new ItcAccordion('#accordion-1');
 new ItcAccordion('#accordion-2');
+
+

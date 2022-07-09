@@ -2,6 +2,11 @@
   background-color: #DAECFF;
   padding: 120px 0;
 }
+@media screen and (max-width: 428px) {
+  .about_services {
+    padding: 16px 20px;
+  }
+}
 
 .about_services .container {
   flex-direction: column;
@@ -10,9 +15,19 @@
 .about_services .container h2 {
   margin: 0 auto;
 }
+@media screen and (max-width: 428px) {
+  .about_services .container h2 {
+    text-align: center;
+  }
+}
 
 .about_services .container .accordion {
   margin-top: 100px;
+}
+@media screen and (max-width: 428px) {
+  .about_services .container .accordion {
+    margin-top: 17px;
+  }
 }
 
 .accordion__item {
@@ -28,6 +43,13 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 125%;
+}
+@media screen and (max-width: 428px) {
+  .accordion__item .accordion__header p {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 175%;
+  }
 }
 
 .accordion__header {
@@ -52,6 +74,11 @@
   background-size: 1.25rem;
   content: "";
 }
+@media screen and (max-width: 428px) {
+  .accordion__header {
+    padding: 15px 23px;
+  }
+}
 
 .accordion__item .accordion__header .cyrcle {
   margin-right: 28px;
@@ -59,6 +86,12 @@
   height: 24px;
   background: #75E169;
   border-radius: 50%;
+}
+@media screen and (max-width: 428px) {
+  .accordion__item .accordion__header .cyrcle {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .accordion__item_show .accordion__header::after {

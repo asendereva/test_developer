@@ -1,5 +1,6 @@
 .ellips-blue {
     float: right;
+    z-index: -2;
     background: #DAECFF;
     width: 31.7vw;
     height: 89.9vh;

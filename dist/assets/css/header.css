@@ -209,6 +209,12 @@
     bottom: 120px;
 }
 
+@media screen and (min-width: 428px) {
+    .banner-block .text-block img {
+        display: none;
+    }
+}
+
 .banner-block .image-block {
     width: 50%;
     -webkit-animation: move 4s ease-out;
@@ -276,6 +282,7 @@
 .bottom-picture {
     position: absolute;
     top: 70%;
+    z-index: -3;
 }
 
 @media screen and (max-width: 425px) {
