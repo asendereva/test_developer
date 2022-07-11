@@ -3,6 +3,12 @@
     padding: 120px 0;
 }
 
+@media screen and (max-width: 428px) {
+    .about_services {
+        padding: 16px 20px;
+    }
+}
+
 .about_services .container {
     -ms-flex-direction: column;
     flex-direction: column;
@@ -12,8 +18,20 @@
     margin: 0 auto;
 }
 
+@media screen and (max-width: 428px) {
+    .about_services .container h2 {
+        text-align: center;
+    }
+}
+
 .about_services .container .accordion {
     margin-top: 100px;
+}
+
+@media screen and (max-width: 428px) {
+    .about_services .container .accordion {
+        margin-top: 17px;
+    }
 }
 
 .accordion__item {
@@ -29,6 +47,14 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 125%;
+}
+
+@media screen and (max-width: 428px) {
+    .accordion__item .accordion__header p {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 175%;
+    }
 }
 
 .accordion__header {
@@ -59,12 +85,25 @@
     content: "";
 }
 
+@media screen and (max-width: 428px) {
+    .accordion__header {
+        padding: 15px 23px;
+    }
+}
+
 .accordion__item .accordion__header .cyrcle {
     margin-right: 28px;
     width: 24px;
     height: 24px;
     background: #75E169;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 428px) {
+    .accordion__item .accordion__header .cyrcle {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 .accordion__item_show .accordion__header::after {
@@ -113,4 +152,22 @@
 .accordion__item.accordion__item_show .accordion__body {
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
+}
+
+.about_services .bag {
+    float: right;
+    width: 6.7vw;
+    margin-right: 180px;
+}
+
+@media screen and (max-width: 428px) {
+    .about_services .bag {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .about_services .bag {
+        margin-top: -130px;
+    }
 }

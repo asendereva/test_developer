@@ -137,3 +137,19 @@ line-height: 125%;
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
 }
+
+.about_services .bag{
+  float: right;
+  width: 6.7vw;
+  margin-right: 180px;
+
+  @media screen and (max-width: 428px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1700px) {
+    margin-top: -130px;
+  }
+
+
+}

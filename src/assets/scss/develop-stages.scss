@@ -1,8 +1,13 @@
 .develop-stages{
-  padding: 120px 0;
+  padding-bottom: 190px;
 
   @media screen and (max-width: 428px){
-    padding: 18px 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  @media (min-width: 428px) and (max-width: 1025px){
+    padding-bottom: 140px;
   }
 }
 
@@ -11,7 +16,7 @@
 }
 
 .develop-stages .light{
-  width: 3.4vw;
+  margin-left: 128px;
 
   @media screen and (max-width: 428px){
     width: 9vw;
@@ -22,6 +27,8 @@
 .develop-stages .blue-sphere{
   width: 9.57vw;
   float: right;
+  margin-right: 186px;
+  margin-top: 86px;
 
   @media screen and (max-width: 428px){
     display: none;
@@ -83,19 +90,19 @@ display: flex !important;
   }
 }
 
-.develop-stages .carousel-block .carousel-slide .text-block h3{
+.carousel-block .carousel-slide .text-block h3{
   margin-bottom: 23px;
 }
 
-.develop-stages .carousel-block .carousel-slide  .img-block img{
+.carousel-block .carousel-slide  .img-block img{
   max-width: 230px;
 }
 
-.develop-stages .carousel-block .slick-track {
+.slick-track {
   display: flex !important;
 }
 
-.develop-stages button.slick-prev.slick-arrow, .develop-stages button.slick-next.slick-arrow{
+button.slick-prev.slick-arrow, button.slick-next.slick-arrow{
   width: 60px;
   height: 60px;
   border: 2px solid #67AEFC;
@@ -105,7 +112,7 @@ display: flex !important;
   justify-content: space-around;
 }
 
-.develop-stages button.slick-next.slick-arrow{
+button.slick-next.slick-arrow{
   justify-content: center;
 }
 

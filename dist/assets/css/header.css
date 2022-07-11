@@ -5,6 +5,12 @@
     padding: 18px 0;
 }
 
+@media screen and (max-width: 425px) {
+    .nav-block {
+        padding: 9px 12px;
+    }
+}
+
 .nav-block .container {
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -177,7 +183,7 @@
 
 .banner-block {
     position: relative;
-    padding: 82px 0 41px 0;
+    padding: 82px 0 122px 0;
 }
 
 @media screen and (max-width: 428px) {
@@ -186,19 +192,15 @@
     }
 }
 
-.banner-block .text-block {
-    width: 50%;
+.banner-block .background-block {
+    z-index: -2;
+    position: absolute;
+    width: 100%;
 }
 
 @media screen and (max-width: 425px) {
     .banner-block .text-block {
-        width: 100%;
-        padding: 0 20px;
         margin-top: 53px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
     }
 }
 
@@ -215,12 +217,6 @@
     }
 }
 
-.banner-block .image-block {
-    width: 50%;
-    -webkit-animation: move 4s ease-out;
-    animation: move 4s ease-out;
-}
-
 @media screen and (max-width: 425px) {
     .banner-block .image-block {
         width: 70%;
@@ -229,16 +225,15 @@
 
 .banner-block .container {
     z-index: 1000;
-    margin: auto;
-    position: relative;
-    left: 0;
-    right: 0;
+    margin-top: 80px;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 425px) {
     .banner-block .container {
+        -ms-flex-pack: center;
+        justify-content: center;
         -ms-flex-align: center;
         align-items: center;
     }
@@ -247,8 +242,6 @@
 .banner-block .ball-blue {
     margin-left: 12.5vw;
     width: 2.77vw;
-    -webkit-animation: move 4s ease-out;
-    animation: move 4s ease-out;
 }
 
 @media screen and (max-width: 425px) {
@@ -260,8 +253,6 @@
 .banner-block .cylinder {
     width: 5.97vw;
     margin-left: 40%;
-    -webkit-animation: move 4s ease-out;
-    animation: move 4s ease-out;
 }
 
 @media screen and (max-width: 425px) {
@@ -294,19 +285,19 @@
 
 @media (min-width: 768px) and (max-width: 992px) {
     .bottom-picture {
-        top: 100%;
+        top: 10%;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1220px) {
     .bottom-picture {
-        top: 85%;
+        top: 20%;
     }
 }
 
 @media (min-width: 1220px) and (max-width: 1440px) {
     .bottom-picture {
-        top: 75%;
+        top: 85%;
     }
 }
 
@@ -315,8 +306,6 @@
     left: 45%;
     top: 35%;
     z-index: 500;
-    -webkit-animation: move 4s ease-out;
-    animation: move 4s ease-out;
 }
 
 @media screen and (max-width: 425px) {
@@ -326,5 +315,19 @@
         top: 255%;
         -webkit-transform: scaleX(-1) scaleY(1);
         transform: scaleX(-1) scaleY(1);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1220px) {
+    .wave-pink {
+        top: 245% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .wave-pink {
+        width: 90%;
+        top: 215%;
+        left: 230%;
     }
 }

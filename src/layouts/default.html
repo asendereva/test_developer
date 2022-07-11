@@ -32,8 +32,26 @@
     }],
         });
       });
-      </script>
-    <script src="assets/js/app.js"></script>
+</script>
+<script>
+      $(document).ready(function(){
+            $('.portfolio .container').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: true,
+            vertical: true,
+            verticalSwiping: true,
+            mobileFirst: true, 
+            responsive: [
+            {
+               breakpoint: 480,
+               settings: "unslick"               
+            }],
+            });
+          });
+</script>
+<script src="assets/js/app.js"></script>
     
 </body>
 </html>
