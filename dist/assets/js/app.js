@@ -1,10 +1,14 @@
+AOS.init({
+  duration: 600
+});
+
 let menuBtn = document.querySelector('.burger-mobile');
 let menu = document.querySelector('.nav-item.mobile');
 
 menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
-})
+});
 
 class ItcAccordion {
   constructor(target, config) {
@@ -29,10 +33,9 @@ class ItcAccordion {
       }
       elHeader.parentElement.classList.toggle('accordion__item_show');
     });
-  }
-}
+  };
+};
 
 new ItcAccordion('#accordion-1');
 new ItcAccordion('#accordion-2');
-
 

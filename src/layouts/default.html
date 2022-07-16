@@ -15,7 +15,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    
     <script>
     $(document).ready(function(){
         $('.carousel-block').slick({
@@ -51,6 +51,44 @@
             });
           });
 </script>
+<!--
+<script>
+  
+const form  = document.getElementsByTagName('form')[0];
+
+const email = document.getElementsByClassName('mail');
+const emailError = document.querySelector('.mail + span.error');
+
+email.addEventListener('input', function (event) {
+  if (email.validity.valid) {
+    emailError.textContent = '';
+    emailError.className = 'error'; 
+    } else {
+    showError();
+  }
+});
+
+form.addEventListener('submit', function (event) {
+  if(!email.validity.valid) {
+    showError();
+    event.preventDefault();
+  }
+});
+
+function showError() {
+  if(email.validity.valueMissing) {
+    emailError.textContent = 'Вам нужно ввести Email';
+  } else if(email.validity.typeMismatch) {
+    emailError.textContent = 'Введенное значение должно быть Email';
+  } else if(email.validity.tooShort) {
+    emailError.textContent = `Email should be at least ${ email.minLength } characters; you entered ${ email.value.length }.`;
+  }
+  emailError.className = 'error active';
+}
+
+</script>-->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/js/app.js"></script>
     
 </body>

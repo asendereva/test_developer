@@ -109,7 +109,12 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow{
   border-radius: 15px;
   display: flex !important;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  
+  &:hover{
+    background-color: #67AEFC;
+
+  }
 }
 
 button.slick-next.slick-arrow{
@@ -120,11 +125,15 @@ button.slick-prev.slick-arrow {
   left: 43.5%;
   top: 120%;
   &::before{
+    font: var(--fa-font-solid);
+    content: "\f053";
     font-size: 24px;
-    background: url(../images/Vector.png) no-repeat;
-    transform: rotate(90deg);
-    color: inherit;
+    color: black;
+    opacity: 1;
+
   }
+
+
 
   @media screen and (max-width: 1240px){
     left: 40%;
@@ -143,11 +152,13 @@ button.slick-prev.slick-arrow {
 button.slick-next.slick-arrow{
   right: 43.5%;
   top: 120%;
+  
   &::before{
-    font-size: 24px;
-    background: url(../images/Vector.png) no-repeat;
-    transform: rotate(-90deg);
-    color: inherit;
+    font: var(--fa-font-solid);
+    content: '\f054';
+    font-size: 24px;    
+    color: black;
+    opacity: 1;
   }
 
   @media screen and (max-width: 1240px){

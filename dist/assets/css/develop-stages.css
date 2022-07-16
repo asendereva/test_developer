@@ -140,8 +140,12 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
     display: flex !important;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
+    background-color: #67AEFC;
 }
 
 button.slick-next.slick-arrow {
@@ -155,11 +159,11 @@ button.slick-prev.slick-arrow {
 }
 
 button.slick-prev.slick-arrow::before {
+    font: var(--fa-font-solid);
+    content: "\f053";
     font-size: 24px;
-    background: url(../images/Vector.png) no-repeat;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    color: inherit;
+    color: black;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1240px) {
@@ -187,11 +191,11 @@ button.slick-next.slick-arrow {
 }
 
 button.slick-next.slick-arrow::before {
+    font: var(--fa-font-solid);
+    content: "\f054";
     font-size: 24px;
-    background: url(../images/Vector.png) no-repeat;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    color: inherit;
+    color: black;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1240px) {
