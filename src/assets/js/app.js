@@ -1,5 +1,4 @@
 AOS.init({
-  duration: 600
 });
 
 let menuBtn = document.querySelector('.burger-mobile');

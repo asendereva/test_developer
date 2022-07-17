@@ -16,7 +16,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
     .ellips-blue {
         height: 32.1vh;
         width: 20.9vh;
@@ -60,7 +60,7 @@
     animation: shake_2 2s ease;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
     .ellips-white {
         width: 12.54vw;
         height: 11.84vh;

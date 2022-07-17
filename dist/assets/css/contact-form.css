@@ -58,15 +58,15 @@ button.btn-green {
     float: right;
 }
 
-.contact-form .bg-block .bg-right .pink {
-    max-width: 176px;
-    width: 100%;
+@media screen and (max-width: 428px) {
+    .contact-form .bg-block .bg-right {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 428px) {
-    .contact-form .bg-block .bg-right .pink {
-        display: none !important;
-    }
+.contact-form .bg-block .bg-right img.pink {
+    max-width: 176px;
+    width: 100%;
 }
 
 .contact-form .bg-block img.phone-call {
