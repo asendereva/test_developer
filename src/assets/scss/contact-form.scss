@@ -14,7 +14,9 @@ button.btn-green{
   width: 100%;
   margin: 27px auto;
   text-align: center;
+
 }
+
 .form-cont{
   margin: 0 auto;
   max-width: 470px;
@@ -49,24 +51,94 @@ button.btn-green{
 .contact-form .bg-block{
   position: absolute;
   width: 100%;
+
+  @media screen and (max-width: 428px){
+    display: none;
+ 
+ }
+    
 }
 
 .contact-form .bg-block .bg-right{
   float: right;
-  @media screen and (max-width: 428px){
-   display: none;
+  margin-right: 15%;
+  margin-top: 5%;
 
-}
+  @media screen and (max-width: 1024px){
+    margin-right: 5%;
+ 
+ }
+    
+
 }
 
 .contact-form .bg-block .bg-right img.pink{
-  max-width: 176px;
+  max-width: 8.9vw;
   width: 100%;
+  transform: scale(-1, 1);
 
+}
+
+.contact-form .bg-block .bg-right .sphere-light{
+  max-width: 3.4vw;
+  width: 100%;
+  padding-left: 41%;
 }
 
 .contact-form .bg-block img.phone-call{
-  max-width: 206px;
+  max-width: 10.38vw;
   width: 100%;
+  margin-left: 15%;
+  margin-top: 6%;
+
+  @media screen and (max-width: 1024px){
+    margin-left: 5%;
+ 
+ }
+    
 }
 
+.contact-form .form-block{
+  
+  @media screen and (max-width: 428px) {
+padding: 0 20px;
+  } 
+}
+
+.contact-form .bg-mobile{
+  margin-top: 42px;
+  padding-bottom: 230px;
+  @media screen and (min-width: 428px) {
+display: none;
+      } 
+}
+
+.contact-form .bg-mobile .phone-call{
+  position: absolute;
+  max-width: 144px;
+  right: 18%;
+  margin-top: 128px;
+  z-index: 5;
+}
+
+
+.contact-form .blue-blur{
+  position: absolute;
+  z-index: 1;
+  left: 20%;
+  margin-top: 60px;
+
+}
+
+.contact-form .pink-sphere{
+  width: 20px;
+  float: right;
+  margin-right: 100px;
+  margin-top: 45px;
+}
+
+.contact-form .mobile-charge{
+  position: absolute;
+  margin-left: 25%;
+  z-index: 3;
+}

@@ -20,11 +20,13 @@ body {
     font-size: 18px;
     line-height: 140%;
     color: black;
+    overflow-x: hidden;
 
     @media screen and (max-width: 821px) {
         font-weight: 400;
         font-size: 16px;
         line-height: 140%;
+        overflow-x: hidden;
       }
 }
 

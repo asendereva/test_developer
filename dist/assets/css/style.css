@@ -589,7 +589,7 @@
     margin-right: 180px;
 }
 
-@media screen and (max-width: 428px) {
+@media (min-width: 320px) and (max-width: 428px) {
     .about_services .bag {
         display: none;
     }
@@ -837,15 +837,15 @@ button.slick-next.slick-arrow::before {
     margin-top: 7%;
 }
 
-@media screen and (max-width: 428px) {
+@media (min-width: 429px) and (max-width: 1400px) {
     .portfolio .pink-wave {
-        display: none;
+        margin-top: 0;
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media (min-width: 320px) and (max-width: 428px) {
     .portfolio .pink-wave {
-        margin-top: 0;
+        display: none;
     }
 }
 
@@ -1170,14 +1170,14 @@ button.btn-green {
     width: 100%;
 }
 
-.contact-form .bg-block .bg-right {
-    float: right;
-}
-
 @media screen and (max-width: 428px) {
-    .contact-form .bg-block .bg-right {
+    .contact-form .bg-block {
         display: none;
     }
+}
+
+.contact-form .bg-block .bg-right {
+    float: right;
 }
 
 .contact-form .bg-block .bg-right img.pink {
@@ -1188,6 +1188,52 @@ button.btn-green {
 .contact-form .bg-block img.phone-call {
     max-width: 206px;
     width: 100%;
+}
+
+@media screen and (max-width: 428px) {
+    .contact-form .form-block {
+        padding: 0 20px;
+    }
+}
+
+.contact-form .bg-mobile {
+    margin-top: 42px;
+    padding-bottom: 230px;
+}
+
+@media screen and (min-width: 428px) {
+    .contact-form .bg-mobile {
+        display: none;
+    }
+}
+
+.contact-form .bg-mobile .phone-call {
+    position: absolute;
+    max-width: 144px;
+    width: 100%;
+    right: 21%;
+    margin-top: 138px;
+    z-index: 5;
+}
+
+.contact-form .blue-blur {
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    margin-top: 60px;
+}
+
+.contact-form .pink-sphere {
+    width: 20px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 45px;
+}
+
+.contact-form .mobile-charge {
+    position: absolute;
+    margin-left: 25%;
+    z-index: 3;
 }
 
 * {

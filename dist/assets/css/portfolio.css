@@ -11,15 +11,15 @@
     margin-top: 7%;
 }
 
-@media screen and (max-width: 428px) {
+@media (min-width: 429px) and (max-width: 1400px) {
     .portfolio .pink-wave {
-        display: none;
+        margin-top: 0;
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media (min-width: 320px) and (max-width: 428px) {
     .portfolio .pink-wave {
-        margin-top: 0;
+        display: none;
     }
 }
 

@@ -159,7 +159,7 @@
     margin-right: 180px;
 }
 
-@media screen and (max-width: 428px) {
+@media (min-width: 320px) and (max-width: 428px) {
     .about_services .bag {
         display: none;
     }

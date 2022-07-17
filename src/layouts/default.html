@@ -35,7 +35,7 @@
 </script>
 <script>
       $(document).ready(function(){
-            $('.portfolio .container').slick({
+            $('carousel-mobile').slick({
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -45,7 +45,7 @@
             mobileFirst: true, 
             responsive: [
             {
-               breakpoint: 480,
+               breakpoint:1024,
                settings: "unslick"               
             }],
             });

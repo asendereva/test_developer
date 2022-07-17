@@ -142,7 +142,7 @@ line-height: 125%;
   width: 6.7vw;
   margin-right: 180px;
 
-  @media screen and (max-width: 428px) {
+  @media (min-width: 320px) and (max-width: 428px) {
     display: none;
   }
 
