@@ -1,0 +1,268 @@
+.nav-block {
+  background-color: #67AEFC;
+  display: flex;
+  padding: 18px 0;
+}
+@media screen and (max-width: 428px) {
+  .nav-block {
+    padding: 9px 12px;
+  }
+}
+
+.nav-block .container {
+  justify-content: space-between;
+}
+@media screen and (max-width: 428px) {
+  .nav-block .container {
+    align-items: center;
+  }
+}
+
+.nav-item.mobile.active {
+  display: flex;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 428px) {
+  .nav-item {
+    display: none;
+  }
+}
+@media (min-width: 428px) and (max-width: 998px) {
+  .nav-item {
+    margin-top: 19px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.nav-item ul {
+  display: flex;
+}
+@media screen and (max-width: 428px) {
+  .nav-item ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.nav-item ul li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin-right: 35px;
+}
+.nav-item ul li:hover {
+  border-bottom: 2px solid white;
+}
+@media screen and (max-width: 428px) {
+  .nav-item ul li {
+    margin-top: 43px;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 27px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .nav-item .nav-btn {
+    display: none;
+  }
+}
+@media (min-width: 428px) and (max-width: 998px) {
+  .nav-item .nav-btn {
+    margin-top: 15px;
+  }
+}
+
+.nav-item .nav-btn .btn-green {
+  padding: 10px 42px;
+}
+.nav-item .nav-btn .btn-green:hover {
+  border: 1px solid white;
+  padding: 9px 41px;
+}
+.nav-item .nav-btn .btn-green:active {
+  background: white;
+  color: #67AEFC;
+}
+
+.nav-block .burger-mobile {
+  display: inline-flex;
+  height: 13px;
+}
+@media screen and (min-width: 428px) {
+  .nav-block .burger-mobile {
+    display: none;
+  }
+}
+
+.nav-block .burger-mobile.active span {
+  animation: move 4s 1;
+}
+@keyframes move {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.nav-block .burger-mobile span {
+  content: "";
+  margin-right: 5px;
+  width: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.banner-block {
+  position: relative;
+  padding: 82px 0 122px 0;
+}
+@media screen and (max-width: 428px) {
+  .banner-block {
+    padding: 35px 0 51px 0;
+  }
+}
+
+.banner-block .background-block {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (max-width: 428px) {
+  .banner-block .text-block {
+    margin-top: 53px;
+  }
+}
+
+.banner-block .text-block img {
+  width: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+}
+@media screen and (min-width: 428px) {
+  .banner-block .text-block img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .banner-block .image-block {
+    width: 70%;
+  }
+}
+
+.banner-block .container {
+  z-index: 1000;
+  margin-top: 80px;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 428px) {
+  .banner-block .container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.banner-block .ball-blue {
+  margin-left: 12.5vw;
+  width: 2.77vw;
+}
+@media screen and (max-width: 428px) {
+  .banner-block .ball-blue {
+    display: none;
+  }
+}
+
+.banner-block .cylinder {
+  width: 5.97vw;
+  margin-left: 40%;
+}
+@media screen and (max-width: 428px) {
+  .banner-block .cylinder {
+    width: 11vw;
+  }
+}
+
+.banner-block .text-block p {
+  margin-top: 20px;
+  margin-bottom: 58px;
+}
+
+.banner-block .text-block a {
+  text-align: center;
+}
+
+.bottom-picture {
+  position: absolute;
+  top: 70%;
+  z-index: -3;
+}
+@media screen and (max-width: 428px) {
+  .bottom-picture {
+    top: 0;
+    position: relative;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bottom-picture {
+    top: 10%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1220px) {
+  .bottom-picture {
+    top: 20%;
+  }
+}
+@media (min-width: 1220px) and (max-width: 1440px) {
+  .bottom-picture {
+    top: 85%;
+  }
+}
+
+.wave-pink {
+  position: absolute;
+  left: 45%;
+  top: 35%;
+  z-index: 500;
+}
+@media screen and (max-width: 428px) {
+  .wave-pink {
+    width: 18vw;
+    left: 0;
+    top: 255%;
+    transform: scaleX(-1) scaleY(1);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1220px) {
+  .wave-pink {
+    top: 245% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .wave-pink {
+    width: 90%;
+    top: 215%;
+    left: 230%;
+  }
+}
