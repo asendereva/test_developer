@@ -209,13 +209,15 @@
     </div>    
   </div>
   <div class="container">
-    <h2 data-aos="fade-up">Обсудить проект</h2>
-    <p class="sub-tittle" data-aos="fade-up">Расскажите о своих бизнес-целях и мы поможем вам в их достижении</p>
+    <div class="contact-title" data-aos="fade-up">
+      <h2 >Обсудить проект</h2>
+      <p class="sub-tittle">Расскажите о своих бизнес-целях и мы поможем вам в их достижении</p>
+    </div>
     <div class="form-block" data-aos="fade-up">
       <form action="#" class="form-cont" name="myForm">
-        <input type="text" name="firstname" onfocus="this.value=''" value="Name" aria-required="true" required>
-        <input type="tel" name="phone" onfocus="this.value=''" value="Telegram/Viber" data-rule="number" required aria-required="true">
-        <input type="email" name="mail" onfocus="this.value=''" value="Email" aria-required="true" required >
+        <input type="text" name="firstname" onfocus="this.value=''" value="Name" required pattern="\D">
+        <input type="tel" name="phone" onfocus="this.value=''" value="Telegram/Viber" data-rule="number" required aria-required="true" pattern="[0-9]" >
+        <input type="email" name="mail" onfocus="this.value=''" value="Email" aria-required="true" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
         <button type="submit" class="btn-green">Отправить</button>
       </form>
     </div>

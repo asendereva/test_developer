@@ -30,7 +30,7 @@
     }
 }
 
-.develop-stages .blue-sphere {
+.develop-stages .blue-wave {
     width: 9.57vw;
     float: right;
     margin-right: 186px;
@@ -38,7 +38,7 @@
 }
 
 @media screen and (max-width: 428px) {
-    .develop-stages .blue-sphere {
+    .develop-stages .blue-wave {
         display: none;
     }
 }

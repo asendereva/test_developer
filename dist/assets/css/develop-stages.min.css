@@ -129,10 +129,6 @@ button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
   background-color: #67AEFC;
 }
 
-button.slick-next.slick-arrow {
-  justify-content: center;
-}
-
 button.slick-prev.slick-arrow {
   left: 43.5%;
   top: 120%;
@@ -164,6 +160,7 @@ button.slick-prev.slick-arrow::before {
 button.slick-next.slick-arrow {
   right: 43.5%;
   top: 120%;
+  justify-content: center;
 }
 button.slick-next.slick-arrow::before {
   font: var(--fa-font-solid);

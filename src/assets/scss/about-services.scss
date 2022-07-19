@@ -4,6 +4,10 @@
   @media screen and (max-width: 428px){
     padding: 16px 20px;
   }
+
+  @media screen and (max-width: 1024px){
+    padding: 82px 0;
+  }
 }
 .about_services .container{
   flex-direction: column;
@@ -22,6 +26,7 @@
 
   @media screen and (max-width: 428px){
     margin-top: 17px;
+    padding: 0 20px;
   }
 }
 

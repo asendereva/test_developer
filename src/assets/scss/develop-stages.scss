@@ -117,10 +117,6 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow{
   }
 }
 
-button.slick-next.slick-arrow{
-  justify-content: center;
-}
-
 button.slick-prev.slick-arrow {
   left: 43.5%;
   top: 120%;
@@ -129,11 +125,9 @@ button.slick-prev.slick-arrow {
     content: "\f053";
     font-size: 24px;
     color: black;
-    opacity: 1;
+    opacity: 1;      
 
   }
-
-
 
   @media screen and (max-width: 1240px){
     left: 40%;
@@ -149,9 +143,11 @@ button.slick-prev.slick-arrow {
   }
 }
 
+
 button.slick-next.slick-arrow{
   right: 43.5%;
   top: 120%;
+  justify-content: center;
   
   &::before{
     font: var(--fa-font-solid);
@@ -159,7 +155,8 @@ button.slick-next.slick-arrow{
     font-size: 24px;    
     color: black;
     opacity: 1;
-  }
+ }
+
 
   @media screen and (max-width: 1240px){
     right: 40%;
