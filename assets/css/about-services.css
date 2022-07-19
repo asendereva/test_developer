@@ -8,6 +8,12 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .about_services {
+        padding: 82px 0;
+    }
+}
+
 .about_services .container {
     -ms-flex-direction: column;
     flex-direction: column;
@@ -30,6 +36,7 @@
 @media screen and (max-width: 428px) {
     .about_services .container .accordion {
         margin-top: 17px;
+        padding: 0 20px;
     }
 }
 

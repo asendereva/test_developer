@@ -62,16 +62,40 @@ button.btn-green {
 
 .contact-form .bg-block .bg-right {
     float: right;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-form .bg-block .bg-right {
+        margin-right: 5%;
+    }
 }
 
 .contact-form .bg-block .bg-right img.pink {
-    max-width: 176px;
+    max-width: 8.9vw;
     width: 100%;
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.contact-form .bg-block .bg-right .sphere-light {
+    max-width: 3.4vw;
+    width: 100%;
+    padding-left: 41%;
 }
 
 .contact-form .bg-block img.phone-call {
-    max-width: 206px;
+    max-width: 10.38vw;
     width: 100%;
+    margin-left: 15%;
+    margin-top: 6%;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-form .bg-block img.phone-call {
+        margin-left: 5%;
+    }
 }
 
 @media screen and (max-width: 428px) {
@@ -94,9 +118,8 @@ button.btn-green {
 .contact-form .bg-mobile .phone-call {
     position: absolute;
     max-width: 144px;
-    width: 100%;
-    right: 21%;
-    margin-top: 138px;
+    right: 18%;
+    margin-top: 128px;
     z-index: 5;
 }
 
