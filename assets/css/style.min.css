@@ -208,7 +208,7 @@
 
 .banner-block .image-block {
   position: relative;
-  background: url(../images/banner-img.png);
+  background: url(./images/banner-img.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -216,7 +216,7 @@
   .banner-block .image-block {
     width: 70%;
     padding: 0 20px 170px 20px;
-    background: url(../images/banner-mobile.png);
+    background: url(./images/banner-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
