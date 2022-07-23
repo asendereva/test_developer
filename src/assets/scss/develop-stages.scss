@@ -61,6 +61,7 @@ display: flex !important;
   border: 2px solid #67AEFC;
   border-radius: 15px;
   padding: 50px 60px 50px 60px;
+  align-items: center;
 
   @media screen and (max-width: 428px){
     flex-direction: column;
@@ -70,20 +71,28 @@ display: flex !important;
 
 .develop-stages .carousel-block .carousel-slide .text-block{
   width: 60%;
-  @media screen and (max-width: 1200px){
-    width: 70%;
+  @media screen and (max-width: 1400px){
+    width: 50%;
   }
   @media screen and (max-width: 428px){
     width: 100%;
+  }
+  @media screen and (max-width: 1200px){
+    width: 70%;
   }
 }
 
 .develop-stages .carousel-block .carousel-slide .img-block{
   width: 40%;
+
+  @media screen and (max-width: 1400px){
+    width: 50%;
+  }
+  
   @media screen and (max-width: 1200px){
     width: 30%;
   }
-
+  
   @media screen and (max-width: 428px){
     width: 90%;
     margin-top: 10px;
