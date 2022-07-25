@@ -104,6 +104,11 @@
   display: inline-flex;
   height: 13px;
 }
+
+.nav-block .container {
+      padding-bottom: 0;
+}
+
 @media screen and (min-width: 428px) {
   .nav-block .burger-mobile {
     display: none;
