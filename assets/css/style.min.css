@@ -532,10 +532,25 @@
   height: 46.6vh;
   border-radius: 100% 0 0 100%/50% 0 0 50%;
 }
+
+@media screen and (max-width: 1440px) {
+  .ellips-blue {
+    width: 32.7vw;
+    height: 76.6vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ellips-blue {
+    width: 32.7vw;
+    height: 60.6vh;
+  }
+}
+
 @media screen and (max-width: 821px) {
   .ellips-blue {
-    width: 27.7vw;
-    height: 33vh;
+    width: 32.7vw;
+    height: 58vh;
   }
 }
 @media screen and (max-width: 428px) {
