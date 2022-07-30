@@ -520,6 +520,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .wave-pink {
+    left: 285%;
+  }
+}
+
 .ellips-blue {
   float: right;
   z-index: -2;
