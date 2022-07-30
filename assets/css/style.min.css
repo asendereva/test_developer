@@ -529,11 +529,11 @@
   z-index: -2;
   background: #DAECFF;
   width: 30.6vw;
-  height: 46.6vh;
+  height: 27.5vw;
   border-radius: 100% 0 0 100%/50% 0 0 50%;
 }
 
-@media screen and (max-width: 1440px) {
+/*@media screen and (max-width: 1440px) {
   .ellips-blue {
     width: 32.7vw;
     height: 76.6vh;
@@ -545,17 +545,17 @@
     width: 32.7vw;
     height: 60.6vh;
   }
-}
+}*/
 
 @media screen and (max-width: 821px) {
   .ellips-blue {
-    width: 32.7vw;
-    height: 58vh;
+    width: 42vw;
+    height: 39vw;
   }
 }
 @media screen and (max-width: 428px) {
   .ellips-blue {
-    height: 28.7vh;
+    height: 58vw;
     width: 43.5vw;
   }
 }
